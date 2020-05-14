@@ -1,18 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// Import Listview component Module
+import { ListviewModule } from '@syncfusion/ej2-angular-lists';
+import { AppComponent }  from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListviewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
